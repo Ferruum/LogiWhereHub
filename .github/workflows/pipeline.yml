@@ -19,6 +19,6 @@ jobs:
         with:
           dotnet-version: '6.0.x'
 
-      - name: Check style project
+      - name: Run code analysis
         run: |
-          dotnet analyze --severity Microsoft.CodeAnalysis.CSharp.DiagnosticSeverity.Error
+          dotnet format --severity Microsoft.CodeAnalysis.CSharp.DiagnosticSeverity.Error
