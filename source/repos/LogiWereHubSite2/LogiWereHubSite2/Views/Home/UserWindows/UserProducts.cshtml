@@ -1,0 +1,79 @@
+﻿@model List<LogiWereHubSite2.Models.ProductModel>
+
+@{
+    ViewData["Title"] = "User Products";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Products</title>
+    <link href="~/css/AdminWindow.css" rel="stylesheet" />
+    <link href="~/css/UserAccount.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/Account" style="color: white;">Информация о пользователе</a></li>
+            <li><a href="/MainPageUser" style="color: white;">На главную</a></li>
+            <li><a href="/UserProducts" style="color: white;">Мои товары</a></li>
+            <li><a href="/OrdersUser" style="color: white;">Мои заказы</a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <div class="product-card-container">
+            @foreach (var product in Model)
+            {
+                <div class="product-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">@product.Name</h5>
+                            <p class="card-text">Price: $@product.Price</p>
+                            <p class="card-text">Quantity: @product.QuantityOnWarehouse</p>
+                            <p class="card-text">Warehouse: @product.NameWarehouse</p>
+                            <p class="card-text">Address: @product.Address</p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </main>
+
+    @section scripts {
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                loadUserProducts();
+            });
+
+            function loadUserProducts() {
+                $.get("/UserProducts")
+                    .done(function (data) {
+                        $(".product-card-container").empty();
+                        $.each(data, function (index, product) {
+                            var productCard = `
+                                            <div class="product-card">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">${product.Name}</h5>
+                                                        <p class="card-text">Price: $${product.Price}</p>
+                                                        <p class="card-text">Quantity: ${product.QuantityOnWarehouse}</p>
+                                                        <p class="card-text">Warehouse: ${product.NameWarehouse}</p>
+                                                        <p class="card-text">Address: ${product.Address}</p>
+                                                    </div>
+                                                </div>
+                                            </div>`;
+                            $(".product-card-container").append(productCard);
+                        });
+                    })
+                    .fail(function () {
+                        alert("Failed to load user products.");
+                    });
+            }
+        </script>
+    }
+</body>
+</html>

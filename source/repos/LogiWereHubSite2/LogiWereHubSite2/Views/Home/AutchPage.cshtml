@@ -1,0 +1,50 @@
+﻿@{
+    Layout = null;
+    ViewData["Title"] = "AuthPage";
+}
+
+@model LogiWereHubSite2.Models.LoginModel
+
+<head>
+    <link href="~/css/Login.css" rel="stylesheet" />
+</head>
+
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <h2 class="active"> Войти </h2>
+        <h2 class="inactive underlineHover"><a href="/RegiserPage">Зарегистрироваться</a></h2>
+        <form asp-action="Login" method="post" onsubmit="return validateForm()">
+            <input asp-for="Login" id="Login" type="text" placeholder="Логин" required />
+            <span asp-validation-for="Login" class="text-danger"></span>
+
+            <input asp-for="Password" id="Password" type="password" placeholder="Пароль" required />
+            <span asp-validation-for="Password" class="text-danger"></span>
+
+            <button type="submit">Войти</button>
+        </form>
+
+        <div id="formFooter">
+            <a class="underlineHover" href="#">Забыли пароль?</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    function validateForm() {
+        var login = document.getElementById('Login').value;
+        var password = document.getElementById('Password').value;
+
+        if (login.trim() === '') {
+            document.getElementById('Login-error').innerText = 'Пожалуйста, введите логин';
+            return false;
+        }
+
+        if (password.trim() === '') {
+            document.getElementById('Password-error').innerText = 'Пожалуйста, введите пароль';
+            return false;
+        }
+
+        return true;
+    }
+</script>
+

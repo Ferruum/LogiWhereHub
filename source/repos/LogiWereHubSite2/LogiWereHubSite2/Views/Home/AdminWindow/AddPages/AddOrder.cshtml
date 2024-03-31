@@ -1,0 +1,61 @@
+﻿@model LogiWereHubSite2.Models.OrderModel
+@{
+    ViewData["Title"] = "Add Order";
+}
+
+<h2>Add New Order</h2>
+
+<form asp-action="AddOrder" method="post">
+    <div class="form-group">
+        <label asp-for="OrderDate">Order Date:</label>
+        <input asp-for="OrderDate" class="form-control" />
+        <span asp-validation-for="OrderDate" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="DeliveryAddress">Delivery Address:</label>
+        <input asp-for="DeliveryAddress" class="form-control" />
+        <span asp-validation-for="DeliveryAddress" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Coordinates">Coordinates:</label>
+        <input asp-for="Coordinates" class="form-control" />
+        <span asp-validation-for="Coordinates" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="CustomerPreferences">Customer Preferences:</label>
+        <input asp-for="CustomerPreferences" class="form-control" />
+        <span asp-validation-for="CustomerPreferences" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="UserId">User:</label>
+        <select asp-for="UserId" class="form-control">
+            @foreach (var user in ViewBag.Users)
+            {
+                <option value="@user.UserId">@user.FirstName @user.LastName</option>
+            }
+        </select>
+        <span asp-validation-for="UserId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="OrderTypeId">Order Type:</label>
+        <select asp-for="OrderTypeId" class="form-control">
+            @foreach (var type in ViewBag.OrderTypes)
+            {
+                <option value="@type.OrderTypeId">@type.OrderType1</option>
+            }
+        </select>
+        <span asp-validation-for="OrderTypeId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="StatusId">Order Status:</label>
+        <select asp-for="StatusId" class="form-control">
+            @foreach (var status in ViewBag.Statuses)
+            {
+                <option value="@status.StatusId">@status.OrderStatus</option>
+            }
+        </select>
+        <span asp-validation-for="StatusId" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add Order</button>
+</form>

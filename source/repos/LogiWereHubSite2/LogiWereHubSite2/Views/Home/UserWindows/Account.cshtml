@@ -1,0 +1,37 @@
+﻿@model LogiWereHubSite2.Models.UserModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = null;
+}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link href="~/css/AdminWindow.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/Account" style="color: white;">Информация о пользователе</a></li>
+            <li><a href="/MainPageUser" style="color: white;">На главную</a></li>
+            <li><a href="/UserProducts" style="color: white;">Мои товары</a></li>
+            <li><a href="/OrdersUser" style="color: white;">Мои заказы</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div style="margin-left:40px;">
+            <div>
+                <p><strong>User ID:</strong> @Model.UserId</p>
+                <p><strong>First Name:</strong> @Model.FirstName</p>
+                <p><strong>Last Name:</strong> @Model.LastName</p>
+                <p><strong>Contact Number:</strong> @Model.ContactNumber</p>
+                <p><strong>Login:</strong> @Model.Login</p>
+                <p><strong>Mail:</strong> @Model.Email</p>
+                <a asp-action="Edit" asp-controller="Account" asp-route-id="@Model.UserId" class="btn btn-primary">Редактировать</a>
+                <form method="post" action="/Logout">
+                    <button type="submit" class="btn btn-danger">Выход из аккаунта</button>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>

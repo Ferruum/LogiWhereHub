@@ -1,0 +1,74 @@
+﻿@model List<LogiWereHubSite2.Models.OrderModel>
+@{
+    ViewData["Title"] = "UserOrders";
+    Layout = null;
+}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link href="~/css/AdminWindow.css" rel="stylesheet" />
+    <style>
+        .order {
+            cursor: pointer;
+            border-bottom: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        .order-details {
+            display: none;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-top: 5px;
+            background-color: #f9f9f9;
+        }
+        .mainasdasdasd {
+            margin-left: 50px;
+        }
+
+        .show {
+            display: block !important;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="/Account" style="color: white;">Информация о пользователе</a></li>
+            <li><a href="/MainPageUser" style="color: white;">На главную</a></li>
+            <li><a href="/UserProducts" style="color: white;">Мои товары</a></li>
+            <li><a href="/OrdersUser" style="color: white;">Мои заказы</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="mainasdasdasd">
+            <h2>Мои заказы</h2>
+            @foreach (var order in Model)
+            {
+                <div class="order">
+                    <span>Дата заказа - @order.OrderDate.ToString("dd.MM.yyyy")</span>
+                    <div class="order-details">
+                        <p><strong>Номер заказа:</strong> @order.OrderId</p>
+                        <p><strong>Адес доаствки:</strong> @order.DeliveryAddress</p>
+                        <p><strong>Ваши предпочтения:</strong> @order.CustomerPreferences</p>
+                        <p><strong>Тип заказа:</strong> @order.OrderType</p>
+                        <p><strong>Статус заказа:</strong> @order.OrderStatus</p>
+                    </div>
+                </div>
+            }
+        </div>
+        <a style="margin-left:40px; margin-top:15px;" href="/AddOrderUser/Add" class="btn btn-primary">Оставить заявку на доставку</a>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var orders = document.querySelectorAll(".order");
+            orders.forEach(function (order) {
+                order.addEventListener("click", function () {
+                    this.querySelector(".order-details").classList.toggle("show");
+                });
+            });
+        });
+    </script>
+</body>

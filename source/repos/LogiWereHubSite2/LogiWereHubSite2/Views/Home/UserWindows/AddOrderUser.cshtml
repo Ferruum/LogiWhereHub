@@ -1,0 +1,33 @@
+﻿@model LogiWereHubSite2.Models.OrderModel
+@{
+    ViewData["Title"] = "Add Order";
+}
+
+<h2>Add New Order</h2>
+
+<div class="container">
+    <form asp-action="AddOrderUser" method="post">
+        <input type="hidden" asp-for="UserId" value="@Model.UserId" />
+
+        <div class="mb-3">
+            <label for="OrderDate" class="form-label">Order Date:</label>
+            <input type="text" id="OrderDate" class="form-control" value="@DateTime.Now" readonly />
+            <span asp-validation-for="OrderDate" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label for="DeliveryAddress" class="form-label">Delivery Address:</label>
+            <input type="text" id="DeliveryAddress" class="form-control" asp-for="DeliveryAddress" />
+            <span asp-validation-for="DeliveryAddress" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label for="CustomerPreferences" class="form-label">Customer Preferences:</label>
+            <textarea id="CustomerPreferences" class="form-control" asp-for="CustomerPreferences"></textarea>
+            <span asp-validation-for="CustomerPreferences" class="text-danger"></span>
+        </div>
+        <input type="hidden" asp-for="OrderTypeId" value="1" />
+        <input type="hidden" asp-for="Coordinates" value="uncnown" />
+        <input type="hidden" asp-for="StatusId" value="1" />
+
+        <button type="submit" class="btn btn-primary">Add Order</button>
+    </form>
+</div>

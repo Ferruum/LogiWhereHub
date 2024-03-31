@@ -1,0 +1,67 @@
+﻿@model List<LogiWereHubSite2.Models.UserModel>
+@{
+    ViewData["Title"] = "Users";
+    Layout = null;
+}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link href="~/css/AdminWindow.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/Index" style="color: white;">Информация о пользователе</a></li>
+            <li><a href="/OrdersAdmin" style="color: white;">Заказы</a></li>
+            <li><a href="/AdminOrderTypes" style="color: white;">Типы заказов</a></li>
+            <li><a href="/AdminPosition" style="color: white;">Должности</a></li>
+            <li><a href="/AdminProductDescription" style="color: white;">Описания продуктов</a></li>
+            <li><a href="/AdminProduct" style="color: white;">Продукты</a></li>
+            <li><a href="/AdminProductsInShipment" style="color: white;">Продукты в отгрузке</a></li>
+            <li><a href="/AdminReceipt" style="color: white;">Квитанции</a></li>
+            <li><a href="/AdminShipment" style="color: white;">Отгрузки</a></li>
+            <li><a href="/AdminStaff" style="color: white;">Сотрудники</a></li>
+            <li><a href="/AdminStatus" style="color: white;">Статусы</a></li>
+            <li><a href="/AdminUsers" style="color: white;">Пользователи</a></li>
+            <li><a href="/AdminVehicle" style="color: white;">Транспортные средства</a></li>
+            <li><a href="/AdminVehicleType" style="color: white;">Типы ТС</a></li>
+            <li><a href="/AdminWarehouseCapacity" style="color: white;">Вместимость склада</a></li>
+            <li><a href="/AdminWarehouse" style="color: white;">Склады</a></li>
+            <li><a href="/MainPageAutchUser" style="color: white;">На главную</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>User ID</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Contact Number</th>
+                        <th>Login</th>
+                        <th>Почта</th>
+                        <th>Роль</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var user in Model)
+                    {
+                        <tr>
+                            <td>@user.UserId</td>
+                            <td>@user.FirstName</td>
+                            <td>@user.LastName</td>
+                            <td>@user.ContactNumber</td>
+                            <td>@user.Login</td>
+                            <td>@user.Email</td>
+                            <td>@user.Role</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <a style="margin-left:40px; margin-top:15px;" href="/AddOrderType/Add" class="btn btn-primary">Добавить</a>
+        </div>
+    </main>
+</body>

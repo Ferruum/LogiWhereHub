@@ -1,0 +1,120 @@
+﻿@{
+    Layout = null;
+    ViewData["Title"] = "RegiserPage";
+}
+
+@model LogiWereHubSite2.Models.UserModel
+
+<head>
+    <link href="~/css/Login.css" rel="stylesheet" />
+</head>
+
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+        <h2 class="inactive underlineHover">Войти</h2>
+        <h2 class="active"> Зарегистрироваться </h2>
+
+        <form asp-action="Register" method="post" onsubmit="return validateForm()">
+            <input asp-for="FirstName" id="FirstName" type="text" placeholder="Имя" required />
+            <span asp-validation-for="FirstName" class="text-danger"></span>
+
+            <input asp-for="LastName" id="LastName" type="text" placeholder="Фамилия" required />
+            <span asp-validation-for="LastName" class="text-danger"></span>
+
+            <input asp-for="ContactNumber" id="ContactNumber" type="text" placeholder="Номер телефона" required />
+            <span asp-validation-for="ContactNumber" class="text-danger"></span>
+
+            <input asp-for="Email" id="Email" type="text" placeholder="Email" required class="email-input" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+
+            <input asp-for="Login" id="Login" type="text" placeholder="Логин" required />
+            <span asp-validation-for="Login" class="text-danger"></span>
+
+            <input asp-for="Password" id="Password" type="password" placeholder="Пароль" required />
+            <span asp-validation-for="Password" class="text-danger"></span>
+
+            <button style="width: 200px;" type="submit">Зарегистрироваться</button>
+        </form>
+    </div>
+</div>
+<script>
+    window.addEventListener('DOMContentLoaded', function() {
+        var phoneInput = document.getElementById('ContactNumber');
+        var phoneError = document.querySelector('[data-valmsg-for="ContactNumber"]');
+
+        // Предварительно устанавливаем значение "+7"
+        phoneInput.value = '+7';
+
+        // Функция для форматирования номера телефона   
+        function formatPhoneNumber() {
+            var cleaned = phoneInput.value.replace(/\D/g, '');
+
+            // Удаляем все символы, кроме цифр
+            var formatted = cleaned.replace(/^(\d{1})(\d{3})(\d{0,3})(\d{0,2})(\d{0,2})/, function(match, p1, p2, p3, p4, p5) {
+                if (!p2) return '+7';
+                var res = '';
+                res += '+7 (' + p2;
+                if (p3) res += ') ' + p3;
+                if (p4) res += '-' + p4;
+                if (p5) res += '-' + p5;
+                return res;
+            });
+
+            phoneInput.value = formatted;
+        }
+
+        // Слушатель события ввода
+        phoneInput.addEventListener('input', formatPhoneNumber);
+
+        // Слушатель события отправки формы
+        document.getElementById('phoneForm').addEventListener('submit', function(event) {
+            // Проверка, если номер не был отформатирован, предотвращаем отправку формы
+            if (!/^\+7\(\d{3}\)\d{3}-\d{2}-\d{2}$/.test(phoneInput.value)) {
+                phoneError.textContent = 'Неверный формат номера';
+                event.preventDefault();
+            }
+        });
+    });
+</script>
+<script>
+    function validateForm() {
+        var firstName = document.getElementById('FirstName').value;
+        var lastName = document.getElementById('LastName').value;
+        var contactNumber = document.getElementById('ContactNumber').value;
+        var email = document.getElementById('Email').value;
+        var login = document.getElementById('Login').value;
+        var password = document.getElementById('Password').value;
+
+        if (firstName.trim() === '') {
+            document.getElementById('FirstName-error').innerText = 'Пожалуйста, введите ваше имя';
+            return false;
+        }
+
+        if (lastName.trim() === '') {
+            document.getElementById('LastName-error').innerText = 'Пожалуйста, введите вашу фамилию';
+            return false;
+        }
+
+        if (contactNumber.trim() === '') {
+            document.getElementById('ContactNumber-error').innerText = 'Пожалуйста, введите ваш номер телефона';
+            return false;
+        }
+
+        if (email.trim() === '') {
+            document.getElementById('Email-error').innerText = 'Пожалуйста, введите ваш email';
+            return false;
+        }
+
+        if (login.trim() === '') {
+            document.getElementById('Login-error').innerText = 'Пожалуйста, введите логин';
+            return false;
+        }
+
+        if (password.trim() === '') {
+            document.getElementById('Password-error').innerText = 'Пожалуйста, введите пароль';
+            return false;
+        }
+
+        return true;
+    }
+</script>

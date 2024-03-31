@@ -1,0 +1,69 @@
+﻿@model List<LogiWereHubSite2.Models.ProductDescriptionModel>
+@{
+    ViewData["Title"] = "Product Descriptions";
+    Layout = null;
+}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link href="~/css/AdminWindow.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/Index" style="color: white;">Информация о пользователе</a></li>
+            <li><a href="/OrdersAdmin" style="color: white;">Заказы</a></li>
+            <li><a href="/AdminOrderTypes" style="color: white;">Типы заказов</a></li>
+            <li><a href="/AdminPosition" style="color: white;">Должности</a></li>
+            <li><a href="/AdminProductDescription" style="color: white;">Описания продуктов</a></li>
+            <li><a href="/AdminProduct" style="color: white;">Продукты</a></li>
+            <li><a href="/AdminProductsInShipment" style="color: white;">Продукты в отгрузке</a></li>
+            <li><a href="/AdminReceipt" style="color: white;">Квитанции</a></li>
+            <li><a href="/AdminShipment" style="color: white;">Отгрузки</a></li>
+            <li><a href="/AdminStaff" style="color: white;">Сотрудники</a></li>
+            <li><a href="/AdminStatus" style="color: white;">Статусы</a></li>
+            <li><a href="/AdminUsers" style="color: white;">Пользователи</a></li>
+            <li><a href="/AdminVehicle" style="color: white;">Транспортные средства</a></li>
+            <li><a href="/AdminVehicleType" style="color: white;">Типы ТС</a></li>
+            <li><a href="/AdminWarehouseCapacity" style="color: white;">Вместимость склада</a></li>
+            <li><a href="/AdminWarehouse" style="color: white;">Склады</a></li>
+            <li><a href="/MainPageAutchUser" style="color: white;">На главную</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Description Id</th>
+                        <th>Name</th>
+                        <th>Description</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var productDescription in Model)
+                    {
+                        <tr>
+                            <td>@productDescription.DescriptionId</td>
+                            <td>@productDescription.Name</td>
+                            <td>@productDescription.Description</td>
+                            <td>
+                                <form asp-action="DeleteProductDescription" method="post">
+                                    <input type="hidden" name="descriptionId" value="@productDescription.DescriptionId" />
+                                    <button type="submit" class="btn btn-danger">Удалить</button>
+                                </form>
+                            </td>
+                            <td>
+                                <a asp-action="Edit" asp-controller="AdminProductDescription" asp-route-id="@productDescription.DescriptionId" class="btn btn-primary">Edit</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <a style="margin-left:40px; margin-top:15px;" href="/AdminProductDescription/Add" class="btn btn-primary">Добавить</a>
+        </div>
+    </main>
+</body>

@@ -1,0 +1,15 @@
+﻿@model LogiWereHubSite2.Models.VehicleTypeModel
+@{
+    ViewData["Title"] = "Add Vehicle Type";
+}
+
+<h2>Add Vehicle Type</h2>
+
+<form asp-action="AddVehicleType" method="post">
+    <div class="form-group">
+        <label asp-for="VehicleTypeName">Vehicle Type Name:</label>
+        <input asp-for="VehicleTypeName" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add Vehicle Type</button>
+</form>

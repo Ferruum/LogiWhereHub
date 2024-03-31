@@ -1,0 +1,14 @@
+﻿@{
+    ViewData["Title"] = "Подтверждение Email";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.ErrorMessage
+    </div>
+}
+
+<p>Пожалуйста, подтвердите ваш email, сообщение уже отправлено вам на почту</p>

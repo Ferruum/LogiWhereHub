@@ -1,0 +1,20 @@
+﻿name: Python Style Check
+on:
+	push:
+		branches:
+			- news
+			
+
+jobs:
+	python-style-check:
+		runs-on: ubuntu-latest
+
+		steps:
+		  - name: Git clone repo
+			uses: actions/checkout@v2
+
+
+		  - name: Set version python
+			uses: actions/setup-python@v2
+			with:
+				python-version: '3.12.2'

@@ -1,0 +1,37 @@
+﻿@model LogiWereHubSite2.Models.WarehouseModel
+@{
+    ViewData["Title"] = "Add Warehouse";
+}
+
+<h2>Add Warehouse</h2>
+
+<form asp-action="AddWarehouse" method="post">
+    <div class="form-group">
+        <label asp-for="Name">Name:</label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Address">Address:</label>
+        <input asp-for="Address" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Coordinates">Coordinates:</label>
+        <input asp-for="Coordinates" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="ArrivalDate">Arrival Date:</label>
+        <input asp-for="ArrivalDate" class="form-control" />
+    </div>
+    <div class="form-group">
+        <!-- Выпадающий список для выбора вместимости склада -->
+        <label asp-for="CapacityId">Capacity:</label>
+        <select asp-for="CapacityId" class="form-control">
+            @foreach (var capacity in ViewBag.Capacities)
+            {
+                <option value="@capacity.CapacityId">@capacity.TotalArea sq ft - Filled: @capacity.FilledSpace sq ft</option>
+            }
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add Warehouse</button>
+</form>

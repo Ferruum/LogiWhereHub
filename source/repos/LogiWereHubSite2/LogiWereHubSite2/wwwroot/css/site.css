@@ -1,0 +1,163 @@
+body {
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+.textColor {
+    color: #2a5a94;
+}
+
+#verticalbar {
+    height: 40px;
+    width: 1px;
+    background: #97a2b0;
+}
+
+.searchInput {
+    width: 320px;
+    border-radius: 10px;
+    border: none;
+    padding-top: 14px;
+    padding-bottom: 4px;
+    border: 1px solid #d5d6d6;
+}
+
+    .searchInput:focus-visible {
+        outline: none;
+    }
+
+input.searchInput::placeholder {
+    color: #2468bb;
+    vertical-align: middle;
+}
+
+.searchImg {
+    top: 13px;
+    right: 290px;
+}
+
+.changeWidth {
+    width: 36px;
+}
+
+.iconChange:after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: all 0.5s ease;
+}
+
+.iconChange:hover::after {
+    width: 100%;
+    background: #0d6efd;
+}
+
+.iconHeight {
+    height: 20px;
+    width: 20px;
+}
+
+.iconChange:hover a {
+    color: #0d6efd;
+}
+
+.iconChange img {
+    transition: all 500ms;
+}
+
+.iconChange:hover img {
+    transform: translateX(-180%);
+    transform-origin: right;
+    transition: transform 500ms ease-in-out;
+}
+
+.smallFont {
+    font-size: 15px;
+}
+
+#hostBtn {
+    background: #163A66;
+    background: linear-gradient(to left, #1C4980 50%, #163A66 50%) right;
+    background-size: 200%;
+    transition: 0.5s ease-out;
+}
+
+    #hostBtn:hover {
+        background-position: left;
+    }
+
+#loginBtn {
+    background: #0d6efd;
+    background: linear-gradient(to left, #0073e6 50%, #005CB8 50%) right;
+    background-size: 200%;
+    transition: 0.5s ease-out;
+}
+
+    #loginBtn:hover {
+        background-position: left;
+    }
+
+#iconContainer {
+    height: 35px;
+    width: 35px;
+}
+
+.extraSmallFont {
+    font-size: 12px;
+    border-bottom: 2px solid transparent;
+}
+
+#secondNav {
+    background: #ffffffd4
+}
+
+#bodyContent {
+    min-height: calc(100vh - 77px)
+}
+
+.maintextColor {
+    color: #1C4980;
+}
+
+.horizontalBar {
+    max-width: 200px;
+    height: 2px;
+    background: #F2C034;
+}
+
+.extraSmallFont.active {
+    border-bottom: 2px solid #6195f5
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Стилизация скроллбара */
+::-webkit-scrollbar {
+    width: 10px; /* ширина скроллбара */
+    
+}
+
+::-webkit-scrollbar-track {
+    background: white; /* цвет фона трека */
+}
+
+::-webkit-scrollbar-thumb {
+    background: black; /* цвет ползунка */
+    border-radius: 5px; /* закругление углов ползунка */
+}
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555; /* изменение цвета ползунка при наведении */
+    }

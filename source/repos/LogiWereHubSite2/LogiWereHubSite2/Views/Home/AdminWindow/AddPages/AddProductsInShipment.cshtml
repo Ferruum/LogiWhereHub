@@ -1,0 +1,41 @@
+﻿@model LogiWereHubSite2.Models.ProductsInShipmentModel
+@{
+    ViewData["Title"] = "Add Product to Shipment";
+}
+
+<h2>Add Product to Shipment</h2>
+
+<form asp-action="AddProductsInShipment" method="post">
+    <div class="form-group">
+        <label asp-for="ProductId">Product:</label>
+        <select asp-for="ProductId" class="form-control">
+            @foreach (var product in ViewBag.Products)
+            {
+                <option value="@product.ProductId">@product.QuantityOnWarehouse</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="ShipmentId">Shipment:</label>
+        <select asp-for="ShipmentId" class="form-control">
+            @foreach (var shipment in ViewBag.Shipments)
+            {
+                    <option value="@shipment.ShipmentId">@shipment.DepartureDate</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="NameVperevozke">NameVperevozke:</label>
+        <input asp-for="NameVperevozke" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Price">Price:</label>
+        <input asp-for="Price" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="QuantityInShipment">QuantityInShipment:</label>
+        <input asp-for="QuantityInShipment" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add to Shipment</button>
+</form>

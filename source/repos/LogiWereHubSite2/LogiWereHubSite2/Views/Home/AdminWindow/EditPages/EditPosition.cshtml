@@ -1,0 +1,25 @@
+﻿@model LogiWereHubSite2.Models.PositionModel
+
+@{
+    ViewData["Title"] = "Edit Position";
+}
+
+<h2>Edit Position</h2>
+
+<form asp-action="EditPosition" method="post">
+    <input type="hidden" asp-for="PositionId" />
+
+    <div class="form-group">
+        <label asp-for="PositionName">Position Name:</label>
+        <input asp-for="PositionName" class="form-control" />
+        <span asp-validation-for="PositionName" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="PositionDescription">Description:</label>
+        <textarea asp-for="PositionDescription" class="form-control"></textarea>
+        <span asp-validation-for="PositionDescription" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+</form>

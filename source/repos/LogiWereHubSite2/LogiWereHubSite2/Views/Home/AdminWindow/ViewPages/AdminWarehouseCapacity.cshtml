@@ -1,0 +1,71 @@
+﻿@model List<LogiWereHubSite2.Models.WarehouseCapacityModel>
+@{
+    ViewData["Title"] = "Warehouse Capacities";
+    Layout = null;
+}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Личный кабинет</title>
+    <link href="~/css/AdminWindow.css" rel="stylesheet" />
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/Index" style="color: white;">Информация о пользователе</a></li>
+            <li><a href="/OrdersAdmin" style="color: white;">Заказы</a></li>
+            <li><a href="/AdminOrderTypes" style="color: white;">Типы заказов</a></li>
+            <li><a href="/AdminPosition" style="color: white;">Должности</a></li>
+            <li><a href="/AdminProductDescription" style="color: white;">Описания продуктов</a></li>
+            <li><a href="/AdminProduct" style="color: white;">Продукты</a></li>
+            <li><a href="/AdminProductsInShipment" style="color: white;">Продукты в отгрузке</a></li>
+            <li><a href="/AdminReceipt" style="color: white;">Квитанции</a></li>
+            <li><a href="/AdminShipment" style="color: white;">Отгрузки</a></li>
+            <li><a href="/AdminStaff" style="color: white;">Сотрудники</a></li>
+            <li><a href="/AdminStatus" style="color: white;">Статусы</a></li>
+            <li><a href="/AdminUsers" style="color: white;">Пользователи</a></li>
+            <li><a href="/AdminVehicle" style="color: white;">Транспортные средства</a></li>
+            <li><a href="/AdminVehicleType" style="color: white;">Типы ТС</a></li>
+            <li><a href="/AdminWarehouseCapacity" style="color: white;">Вместимость склада</a></li>
+            <li><a href="/AdminWarehouse" style="color: white;">Склады</a></li>
+            <li><a href="/MainPageAutchUser" style="color: white;">На главную</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Capacity ID</th>
+                        <th>Total Area</th>
+                        <th>Filled Space</th>
+                        <th>Free Space</th>
+                        <th></th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var capacity in Model)
+                    {
+                        <tr>
+                            <td>@capacity.CapacityId</td>
+                            <td>@capacity.TotalArea</td>
+                            <td>@capacity.FilledSpace</td>
+                            <td>@capacity.FreeSpace</td>
+                            <td>
+                                <form asp-action="DeleteWarehouseCapacity" method="post">
+                                    <input type="hidden" name="capacityId" value="@capacity.CapacityId" />
+                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                </form>
+                            </td>
+                            <td>
+                                <a asp-action="Edit" asp-controller="AdminWarehouseCapacity" asp-route-id="@capacity.CapacityId" class="btn btn-primary">Edit</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <a style="margin-left:40px; margin-top:15px;" href="/AdminWarehouseCapacity/Add" class="btn btn-primary">Добавить</a>
+        </div>
+    </main>
+</body>

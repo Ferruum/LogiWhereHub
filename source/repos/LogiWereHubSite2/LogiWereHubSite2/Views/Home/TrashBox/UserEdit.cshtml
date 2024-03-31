@@ -1,0 +1,32 @@
+﻿@model UserModel
+@{
+    ViewData["Title"] = "Profile";
+    Layout = null;
+}
+
+<h1>Профиль пользователя</h1>
+
+<form method="post" action="/UserEdit/@Model.UserId">
+    <div>
+        <label for="FirstName"><strong>First Name:</strong></label>
+        <input type="text" id="FirstName" name="FirstName" value="@Model.FirstName" />
+    </div>
+    <div>
+        <label for="LastName"><strong>Last Name:</strong></label>
+        <input type="text" id="LastName" name="LastName" value="@Model.LastName" />
+    </div>
+    <div>
+        <label for="ContactNumber"><strong>Contact Number:</strong></label>
+        <input type="text" id="ContactNumber" name="ContactNumber" value="@Model.ContactNumber" />
+    </div>
+    <div>
+        <label for="Login"><strong>Login:</strong></label>
+        <input type="text" id="Login" name="Login" value="@Model.Login" />
+    </div>
+    <div>
+        <label for="Password"><strong>Password:</strong></label>
+        <input type="password" id="Password" name="Password" value="@Model.Password" />
+    </div>
+    <button type="submit">Сохранить</button>
+</form>
+<a href="/Index">Отменить</a>

@@ -1,0 +1,28 @@
+﻿@model LogiWereHubSite2.Models.ReceiptModel
+@{
+    ViewData["Title"] = "Add Receipt";
+}
+
+<h2>Add Receipt</h2>
+
+<form asp-action="AddReceipt" method="post">
+    <div class="form-group">
+        <label asp-for="OrderId">Order:</label>
+        <select asp-for="OrderId" class="form-control">
+            @foreach (var order in ViewBag.Orders)
+            {
+                <option value="@order.OrderId">@order.OrderId</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="OrderAmount">Order Amount:</label>
+        <input asp-for="OrderAmount" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="PaymentDate">Payment Date:</label>
+        <input asp-for="PaymentDate" class="form-control" type="date" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add Receipt</button>
+</form>

@@ -1,0 +1,43 @@
+﻿@model LogiWereHubSite2.Models.ShipmentModel
+
+@{
+    ViewData["Title"] = "Edit Shipment";
+}
+
+<h2>Edit Shipment</h2>
+
+<form asp-action="EditShipment" method="post">
+    <input type="hidden" asp-for="ShipmentId" />
+
+    <div class="form-group">
+        <label asp-for="DepartureDate">Departure Date:</label>
+        <input asp-for="DepartureDate" class="form-control" />
+        <span asp-validation-for="DepartureDate" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ArrivalDate">Arrival Date:</label>
+        <input asp-for="ArrivalDate" class="form-control" />
+        <span asp-validation-for="ArrivalDate" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="OrderId">Order ID:</label>
+        <input asp-for="OrderId" class="form-control" />
+        <span asp-validation-for="OrderId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="VehicleId">Vehicle ID:</label>
+        <input asp-for="VehicleId" class="form-control" />
+        <span asp-validation-for="VehicleId" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="StaffId">Staff ID:</label>
+        <input asp-for="StaffId" class="form-control" />
+        <span asp-validation-for="StaffId" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+</form>

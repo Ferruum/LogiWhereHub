@@ -1,0 +1,16 @@
+﻿@model LogiWereHubSite2.Models.OrderTypeModel
+@{
+    ViewData["Title"] = "Add Order Type";
+}
+
+<h2>Add New Order Type</h2>
+
+<form asp-action="AddOrderType" method="post">
+    <div class="form-group">
+        <label asp-for="OrderType1">Order Type:</label>
+        <input asp-for="OrderType1" class="form-control" />
+        <span asp-validation-for="OrderType1" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add Order Type</button>
+</form>

@@ -1,0 +1,46 @@
+﻿@model LogiWereHubSite2.Models.staffModel
+@{
+    ViewData["Title"] = "Add Staff";
+}
+
+<h2>Add Staff</h2>
+
+<form asp-action="AddStaff" method="post">
+    <div class="form-group">
+        <label asp-for="Salary">Salary:</label>
+        <input asp-for="Salary" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="HireDate">Hire Date:</label>
+        <input asp-for="HireDate" class="form-control" type="date" />
+    </div>
+    <div class="form-group">
+        <label asp-for="WarehouseId">Warehouse:</label>
+        <select asp-for="WarehouseId" class="form-control">
+            @foreach (var warehouse in ViewBag.Warehouses)
+            {
+                <option value="@warehouse.WarehouseId">@warehouse.WarehouseId</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="PositionId">Position:</label>
+        <select asp-for="PositionId" class="form-control">
+            @foreach (var position in ViewBag.Positions)
+            {
+                <option value="@position.PositionId">@position.PositionId</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="UserId">User:</label>
+        <select asp-for="UserId" class="form-control">
+            @foreach (var user in ViewBag.Users)
+            {
+                <option value="@user.UserId">@user.UserId</option>
+            }
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add Staff</button>
+</form>

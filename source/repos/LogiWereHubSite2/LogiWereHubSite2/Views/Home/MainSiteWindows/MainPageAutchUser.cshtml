@@ -1,0 +1,211 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LWH</title>
+    <link href="~/css/site.css" rel="stylesheet" />
+    <link href="~/js/site.js" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <style>
+        main {
+            opacity: 0;
+            transition: opacity 1s;
+        }
+
+            main.loaded {
+                opacity: 1;
+            }
+
+    </style>
+    <script>
+        window.onload = function () {
+            var main = document.querySelector('main');
+            main.classList.add('loaded');
+        };
+    </script>
+</head>
+
+<body>
+    <nav class="navbar align-items-center border-bottom">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center ">
+                <a href="#" class="navbar-brand m-0 textColor fw-bold brand">L W H</a>
+                <div id="verticalbar" class="mx-xxl-2 mx-1 d-none d-lg-inline-block"></div>
+                <a href="#" class="nav-link textColor fw-lighter lh-sm brandSubHeading d-none d-lg-inline-block">
+                    Logi
+                    <br>
+                    <span class="brandSubHeading d-none d-lg-inline-block">Where</span>
+                    <br>
+                    <span class="brandSubHeading d-none d-lg-inline-block">Hub</span>
+                </a>
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="d-none d-lg-block">
+                    <ul class="d-flex m-0 list-unstyled ">
+                        <li class="nav-item iconChange  me-4 pt-2">
+                            <a href="/" class="nav-link text-center  p-0">
+                                <div class=" d-flex align-items-center overflow-hidden changeWidth mx-auto">
+                                    <img class="one iconHeight mx-2" src="~/img/home.png" />
+                                    <img class="two iconHeight mx-2" src="~/img/homesecond.png" />
+                                </div>
+                                <div class="smallFont textColor">Главная</div>
+                            </a>
+                        </li>
+                        <li class="nav-item iconChange   me-4 pt-2">
+                            <a href="/Service" class="nav-link text-center p-0">
+                                <div class=" d-flex align-items-center overflow-hidden changeWidth mx-auto">
+                                    <img class="iconHeight mx-2" src="~/img/services.png" />
+                                    <img class=" iconHeight mx-2" src="~/img/servicessecond.png" />
+                                </div>
+                                <div class="smallFont textColor">Услуги</div>
+                            </a>
+                        </li>
+                        <li class="nav-item iconChange  me-4 pt-2">
+                            <a href="/Warehouse" class="nav-link text-center p-0">
+                                <div class=" d-flex align-items-center overflow-hidden changeWidth mx-auto">
+                                    <img class=" iconHeight mx-2" src="~/img/warehouse.png" />
+                                    <img class=" iconHeight mx-2" src="~/img/warehousesecond.png" />
+                                </div>
+                                <div class="smallFont textColor">Склады</div>
+                            </a>
+                        </li>
+                        <li class="nav-item iconChange  me-4 pt-2">
+                            <a href="/Auto" class="nav-link text-center p-0">
+                                <div class=" d-flex align-items-center overflow-hidden changeWidth mx-auto">
+                                    <img class=" iconHeight mx-2" src="~/img/auto.png" />
+                                    <img class=" iconHeight mx-2" src="~/img/autosecond.png" />
+                                </div>
+                                <div class="smallFont textColor">Автопарк</div>
+                            </a>
+                        </li>
+                        <li class="nav-item iconChange  me-3 pt-2">
+                            <a href="/Team" class="nav-link text-center p-0">
+                                <div class="d-flex align-items-center overflow-hidden changeWidth mx-auto">
+                                    <img class="iconHeight mx-2" src="~/img/team.png" />
+                                    <img class="iconHeight mx-2" src="~/img/teamsecond.png" />
+                                </div>
+                                <div class="smallFont textColor">Команда</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <button id="hostBtn" class="btn btn-sm m-sm-2 m-1 text-white a rounded-5 px-3 d-none d-lg-inline-block">
+                    <img class="me-2 mb-1 iconHeight" src="~/img/vak.png" />
+                    Вакансии
+                </button>
+                <button id="loginBtn" class="btn btn-sm m-sm-2 m-1 bg-primary text-white rounded-5 px-sm-3 px-2" onclick="redirectToAuthPage()">
+                    
+                    <img class="d-none d-lg-inline-block iconHeight" src="~/img/avatar.png" />
+                </button>
+                <script>
+                    function redirectToAuthPage() {
+                        window.location.href = "/Index";
+                    }
+                </script>
+
+            </div>
+        </div>
+    </nav>
+    <nav id="secondNav" class="bottom-0 position-fixed end-0 start-0">
+        <div class="d-lg-none">
+            <div class="container-fluid d-flex justify-content-between shadow pt-2">
+                <a href="#" class="text-decoration-none textColor  text-center">
+                    <img class="iconHeight mb-1" src="~/img/homesecond.png" />
+                    <div class="extraSmallFont pb-1">Главная</div>
+                </a>
+                <a href="#" class="text-decoration-none textColor  text-center">
+                    <img class="iconHeight mb-1" src="~/img/servicessecond.png" />
+                    <div class="extraSmallFont pb-1">Услуги</div>
+                </a>
+                <a href="#" class="text-decoration-none textColor  text-center">
+                    <img class="iconHeight mb-1" src="~/img/warehousesecond.png" />
+                    <div class="extraSmallFont pb-1">Склады</div>
+                </a>
+                <a href="#" class="text-decoration-none textColor  text-center">
+                    <img class="iconHeight mb-1" src="~/img/autosecond.png" />
+                    <div class="extraSmallFont pb-1">Автопарк</div>
+                </a>
+                <a href="#" class="text-decoration-none textColor  text-center">
+                    <img class="iconHeight mb-1" src="~/img/teamsecond.png" />
+                    <div class="extraSmallFont pb-1">Команда</div>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container">
+            <div id="bodyContent" class="d-flex align-items-center">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-8">
+                        <div class="p-2">
+                            <p class="fw-medium fs-3 maintextColor">Добро пожаловать на наш сайт!</p>
+                            <h1 class="fw-bolder display-3 maintextColor">Мы - LogiWhereHub</h1>
+                            <div class="horizontalBar my-4"></div>
+                            <p class="maintextColor fw-medium">
+                                Наша миссия - предоставить вам высококачественные услуги в сфере хранения и логистики,
+                                основанные на инновациях и лучших практиках. Мы гордимся своим профессионализмом и стремлением к постоянному развитию, чтобы обеспечить
+                                вас самым лучшим опытом обслуживания.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 text-lg-center">
+                        <div class="p-2 text-center">
+                            <img class="w-100" src="~/img/exampeimg.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div id="bodyContent" class="d-flex align-items-center">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-8">
+                        <div class="p-2">
+                            <h1 class="fw-bolder display-3 maintextColor">Ваш успех - наш приоритет</h1>
+                            <div class="horizontalBar my-4"></div>
+                            <p class="maintextColor fw-medium">
+                                Мы нацелены на долгосрочное сотрудничество с каждым клиентом и готовы предложить индивидуальный подход к вашим потребностям.
+                                Независимо от того, нужны ли вам [услуги вашей компании], [дополнительные услуги] или [еще что-то], мы готовы помочь вам
+                                достичь ваших целей.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 text-lg-center">
+                        <div class="p-2 text-center">
+                            <img class="w-100" src="~/img/exampeimg.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div id="bodyContent" class="d-flex align-items-center">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-8">
+                        <div class="p-2">
+                            <h1 class="fw-bolder display-3 maintextColor">Наша компания - это команда профессионалов</h1>
+                            <div class="horizontalBar my-4"></div>
+                            <p class="maintextColor fw-medium">
+                                Мы всегготовых воплотить в жизнь любые задачи. Мы ценим каждого клиента и стремимся к тому, чтобы каждое взаимодействие с
+                                нами было приятным и продуктивным. Присоединяйтесь к нам сегодня и убедитесь в качестве наших услуг сами!
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 text-lg-center">
+                        <div class="p-2 text-center">
+                            <img class="w-100" src="~/img/exampeimg.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+﻿@model LogiWereHubSite2.Models.StatusModel
+@{
+    ViewData["Title"] = "Add Status";
+}
+
+<h2>Add Status</h2>
+
+<form asp-action="AddStatus" method="post">
+    <div class="form-group">
+        <label asp-for="OrderStatus">Order Status:</label>
+        <input asp-for="OrderStatus" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add Status</button>
+</form>

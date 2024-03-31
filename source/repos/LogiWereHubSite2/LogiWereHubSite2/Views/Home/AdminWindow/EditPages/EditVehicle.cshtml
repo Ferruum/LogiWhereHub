@@ -1,0 +1,25 @@
+﻿@model LogiWereHubSite2.Models.VehicleModel
+
+@{
+    ViewData["Title"] = "Edit Vehicle";
+}
+
+<h2>Edit Vehicle</h2>
+
+<form asp-action="EditVehicle" method="post">
+    <input type="hidden" asp-for="VehicleId" />
+
+    <div class="form-group">
+        <label asp-for="RegistrationNumber">Registration Number:</label>
+        <input asp-for="RegistrationNumber" class="form-control" />
+        <span asp-validation-for="RegistrationNumber" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="VehicleTypeId">Vehicle Type:</label>
+        <input asp-for="VehicleTypeId" class="form-control" />
+        <span asp-validation-for="VehicleTypeId" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+</form>

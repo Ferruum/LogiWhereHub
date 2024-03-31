@@ -1,0 +1,23 @@
+﻿@model LogiWereHubSite2.Models.WarehouseCapacityModel
+@{
+    ViewData["Title"] = "Add Warehouse Capacity";
+}
+
+<h2>Add Warehouse Capacity</h2>
+
+<form asp-action="AddWarehouseCapacity" method="post">
+    <div class="form-group">
+        <label asp-for="TotalArea">Total Area:</label>
+        <input asp-for="TotalArea" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="FilledSpace">Filled Space:</label>
+        <input asp-for="FilledSpace" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="FreeSpace">Free Space:</label>
+        <input asp-for="FreeSpace" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add Warehouse Capacity</button>
+</form>

@@ -1,0 +1,289 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = LogiWereHubSite2
+build_property.RootNamespace = LogiWereHubSite2
+build_property.ProjectDir = C:\Users\mrale\source\repos\LogiWereHubSite2\LogiWereHubSite2\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\mrale\source\repos\LogiWereHubSite2\LogiWereHubSite2
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/AddPages/AddOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xBZGRQYWdlc1xBZGRPcmRlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/AddPages/AddOrderType.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xBZGRQYWdlc1xBZGRPcmRlclR5cGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/AddPages/AddPosition.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xBZGRQYWdlc1xBZGRQb3NpdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/AddPages/AddProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xBZGRQYWdlc1xBZGRQcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/AddPages/AddProductDescription.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xBZGRQYWdlc1xBZGRQcm9kdWN0RGVzY3JpcHRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/AddPages/AddProductsInShipment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xBZGRQYWdlc1xBZGRQcm9kdWN0c0luU2hpcG1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/AddPages/AddReceipt.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xBZGRQYWdlc1xBZGRSZWNlaXB0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/AddPages/AddShipment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xBZGRQYWdlc1xBZGRTaGlwbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/AddPages/AddStaff.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xBZGRQYWdlc1xBZGRTdGFmZi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/AddPages/AddStatus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xBZGRQYWdlc1xBZGRTdGF0dXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/AddPages/AddVehicle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xBZGRQYWdlc1xBZGRWZWhpY2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/AddPages/AddVehicleType.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xBZGRQYWdlc1xBZGRWZWhpY2xlVHlwZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/AddPages/AddWarehouse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xBZGRQYWdlc1xBZGRXYXJlaG91c2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/AddPages/AddWarehouseCapacity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xBZGRQYWdlc1xBZGRXYXJlaG91c2VDYXBhY2l0eS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/EditPages/EditOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xFZGl0UGFnZXNcRWRpdE9yZGVyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/EditPages/EditOrderType.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xFZGl0UGFnZXNcRWRpdE9yZGVyVHlwZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/EditPages/EditPosition.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xFZGl0UGFnZXNcRWRpdFBvc2l0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/EditPages/EditProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xFZGl0UGFnZXNcRWRpdFByb2R1Y3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/EditPages/EditProductDescription.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xFZGl0UGFnZXNcRWRpdFByb2R1Y3REZXNjcmlwdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/EditPages/EditProductInShipment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xFZGl0UGFnZXNcRWRpdFByb2R1Y3RJblNoaXBtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/EditPages/EditReceipt.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xFZGl0UGFnZXNcRWRpdFJlY2VpcHQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/EditPages/EditShipment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xFZGl0UGFnZXNcRWRpdFNoaXBtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/EditPages/EditStaff.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xFZGl0UGFnZXNcRWRpdFN0YWZmLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/EditPages/EditStatus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xFZGl0UGFnZXNcRWRpdFN0YXR1cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/EditPages/EditVehicle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xFZGl0UGFnZXNcRWRpdFZlaGljbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/EditPages/EditVehicleType.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xFZGl0UGFnZXNcRWRpdFZlaGljbGVUeXBlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/EditPages/EditWarehouse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xFZGl0UGFnZXNcRWRpdFdhcmVob3VzZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/EditPages/EditWarehouseCapacity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xFZGl0UGFnZXNcRWRpdFdhcmVob3VzZUNhcGFjaXR5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/ViewPages/AdminOrderTypes.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xWaWV3UGFnZXNcQWRtaW5PcmRlclR5cGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/ViewPages/AdminPosition.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xWaWV3UGFnZXNcQWRtaW5Qb3NpdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/ViewPages/AdminProduct.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xWaWV3UGFnZXNcQWRtaW5Qcm9kdWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/ViewPages/AdminProductDescription.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xWaWV3UGFnZXNcQWRtaW5Qcm9kdWN0RGVzY3JpcHRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/ViewPages/AdminProductsInShipment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xWaWV3UGFnZXNcQWRtaW5Qcm9kdWN0c0luU2hpcG1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/ViewPages/AdminReceipt.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xWaWV3UGFnZXNcQWRtaW5SZWNlaXB0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/ViewPages/AdminShipment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xWaWV3UGFnZXNcQWRtaW5TaGlwbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/ViewPages/AdminStaff.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xWaWV3UGFnZXNcQWRtaW5TdGFmZi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/ViewPages/AdminStatus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xWaWV3UGFnZXNcQWRtaW5TdGF0dXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/ViewPages/AdminUsers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xWaWV3UGFnZXNcQWRtaW5Vc2Vycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/ViewPages/AdminVehicle.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xWaWV3UGFnZXNcQWRtaW5WZWhpY2xlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/ViewPages/AdminVehicleType.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xWaWV3UGFnZXNcQWRtaW5WZWhpY2xlVHlwZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/ViewPages/AdminWarehouse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xWaWV3UGFnZXNcQWRtaW5XYXJlaG91c2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/ViewPages/AdminWarehouseCapacity.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xWaWV3UGFnZXNcQWRtaW5XYXJlaG91c2VDYXBhY2l0eS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/ViewPages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xWaWV3UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AdminWindow/ViewPages/OrdersAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBZG1pbldpbmRvd1xWaWV3UGFnZXNcT3JkZXJzQWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/AutchPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBdXRjaFBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/CheckYourEmail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDaGVja1lvdXJFbWFpbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/MainSiteWindows/Auto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNYWluU2l0ZVdpbmRvd3NcQXV0by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/MainSiteWindows/MainPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNYWluU2l0ZVdpbmRvd3NcTWFpblBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/MainSiteWindows/MainPageAutchUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNYWluU2l0ZVdpbmRvd3NcTWFpblBhZ2VBdXRjaFVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/MainSiteWindows/Service.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNYWluU2l0ZVdpbmRvd3NcU2VydmljZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/MainSiteWindows/Team.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNYWluU2l0ZVdpbmRvd3NcVGVhbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/MainSiteWindows/Warehouse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNYWluU2l0ZVdpbmRvd3NcV2FyZWhvdXNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/RegiserPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc2VyUGFnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/TrashBox/UserEdit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUcmFzaEJveFxVc2VyRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/UserWindows/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2VyV2luZG93c1xBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/UserWindows/Account.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2VyV2luZG93c1xBY2NvdW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/UserWindows/AddOrderUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2VyV2luZG93c1xBZGRPcmRlclVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/UserWindows/ConfirmationSuccess.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2VyV2luZG93c1xDb25maXJtYXRpb25TdWNjZXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/UserWindows/EditUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2VyV2luZG93c1xFZGl0VXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/UserWindows/EmailConfirmationPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2VyV2luZG93c1xFbWFpbENvbmZpcm1hdGlvblBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/UserWindows/MainPageUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2VyV2luZG93c1xNYWluUGFnZVVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/UserWindows/OrdersUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2VyV2luZG93c1xPcmRlcnNVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Home/UserWindows/UserProducts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxVc2VyV2luZG93c1xVc2VyUHJvZHVjdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mrale/source/repos/LogiWereHubSite2/LogiWereHubSite2/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-7cfgqi6qlp

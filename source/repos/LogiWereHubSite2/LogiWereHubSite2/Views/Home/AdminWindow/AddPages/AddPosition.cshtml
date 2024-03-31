@@ -1,0 +1,21 @@
+﻿@model LogiWereHubSite2.Models.PositionModel
+@{
+    ViewData["Title"] = "Add Position";
+}
+
+<h2>Add New Position</h2>
+
+<form asp-action="AddPosition" method="post">
+    <div class="form-group">
+        <label asp-for="PositionName">Position Name:</label>
+        <input asp-for="PositionName" class="form-control" />
+        <span asp-validation-for="PositionName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PositionDescription">Position Description:</label>
+        <input asp-for="PositionDescription" class="form-control" />
+        <span asp-validation-for="PositionDescription" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Add Position</button>
+</form>
