@@ -21,7 +21,7 @@ jobs:
 
       - name: Install StyleCop Analyzers
         run: |
-          cd source/repos/LogiWereHubSite2/LogiWereHubSite2/LogiWereHubSite2.csproj
+          cd source/repos/LogiWereHubSite2/LogiWereHubSite2
           dotnet add package StyleCop.Analyzers --version 1.1.118
 
 
