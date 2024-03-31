@@ -19,6 +19,8 @@ jobs:
         with:
           dotnet-version: '6.0.x'
 
-      - name: Run code analysis
-        run: |
-          dotnet format --check --severity error source/repos/LogiWereHubSite2/LogiWereHubSite2/LogiWereHubSite2.csproj
+      - name: Install StyleCop Analyzers
+        run: dotnet add package StyleCop.Analyzers --version 1.1.118
+
+      - name: Run StyleCop Analyzers
+        run: dotnet build /p:StyleCopEnabled=true /p:StyleCopTreatErrorsAsWarnings=true
