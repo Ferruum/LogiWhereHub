@@ -21,4 +21,4 @@ jobs:
 
       - name: Run code analysis
         run: |
-          dotnet format analyze --severity error
+          dotnet format --severity error
