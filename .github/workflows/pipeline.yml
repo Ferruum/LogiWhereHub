@@ -21,4 +21,4 @@ jobs:
 
       - name: Run code analysis
         run: |
-          dotnet format --severity error
+          dotnet format --severity error source/repos/LogiWereHubSite2/LogiWereHubSite2/LogiWereHubSite2.csproj
