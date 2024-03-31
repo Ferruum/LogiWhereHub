@@ -233,13 +233,27 @@ namespace LogiWereHubSite2.Controllers
                     }
                 }
 
-                return View(ordersData);
+                // Добавляем проверку роли пользователя
+                var role = HttpContext.Session.GetString("Role");
+                if (role == "Admin")
+                {
+                    return View("OrdersAdmin", ordersData);
+                }
+                else if (role == "User")
+                {
+                    return RedirectToAction("AccessDenied");
+                }
+                else
+                {
+                    return RedirectToAction("Error");
+                }
             }
             else
             {
                 return RedirectToAction("Error");
             }
         }
+
 
 
         [HttpGet("/AdminOrderTypes")]

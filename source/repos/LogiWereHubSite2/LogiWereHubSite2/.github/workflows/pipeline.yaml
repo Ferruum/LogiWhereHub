@@ -1,20 +1,24 @@
-﻿name: Python Style Check
+﻿name: Code Analysis Pipeline
+
 on:
-	push:
-		branches:
-			- news
-			
+  push:
+    branches:
+      - main
+      - master
 
 jobs:
-	python-style-check:
-		runs-on: ubuntu-latest
+  checkstyle_project:
+    runs-on: ubuntu-latest
 
-		steps:
-		  - name: Git clone repo
-			uses: actions/checkout@v2
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
 
+      - name: Set up .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '6.0.x'
 
-		  - name: Set version python
-			uses: actions/setup-python@v2
-			with:
-				python-version: '3.12.2'
+      - name: Check style project
+        run: |
+          dotnet analyze --severity Microsoft.CodeAnalysis.CSharp.DiagnosticSeverity.Error
