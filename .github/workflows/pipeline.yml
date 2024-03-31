@@ -20,7 +20,10 @@ jobs:
           dotnet-version: '6.0.x'
 
       - name: Install StyleCop Analyzers
-        run: dotnet add package StyleCop.Analyzers --version 1.1.118
+        run: |
+          cd source/repos/LogiWereHubSite2/LogiWereHubSite2/LogiWereHubSite2.csproj
+          dotnet add package StyleCop.Analyzers --version 1.1.118
+
 
       - name: Run StyleCop Analyzers
         run: dotnet build /p:StyleCopEnabled=true /p:StyleCopTreatErrorsAsWarnings=true
