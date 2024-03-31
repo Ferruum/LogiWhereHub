@@ -21,4 +21,4 @@ jobs:
 
       - name: Run code analysis
         run: |
-          dotnet format --severity Microsoft.CodeAnalysis.CSharp.DiagnosticSeverity.Error
+          dotnet format analyze --severity error
