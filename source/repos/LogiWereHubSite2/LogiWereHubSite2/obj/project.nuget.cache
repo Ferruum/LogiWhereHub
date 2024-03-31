@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "bIsv2ST68L9j703goRLeMe0Xwt0b7gpX5q4uwCeA/Ryx4NkR+SE2d3rGTw7MnflwbRgvPuYAyRSoBb4MzN0Z5g==",
+  "dgSpecHash": "xlU040MrTy1J1ob+ySjr+M0mPtP0n3AKEOc5McIXs+tppyhwmBjI+WefuJpldIVhOHKG9xrcvN7yN3Ku4Nyavg==",
   "success": true,
   "projectFilePath": "C:\\Users\\mrale\\source\\repos\\LogiWereHubSite2\\LogiWereHubSite2\\LogiWereHubSite2.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\mrale\\.nuget\\packages\\microsoft.codeanalysis.netanalyzers\\8.0.0\\microsoft.codeanalysis.netanalyzers.8.0.0.nupkg.sha512",
     "C:\\Users\\mrale\\.nuget\\packages\\microsoft.identitymodel.abstractions\\7.4.0\\microsoft.identitymodel.abstractions.7.4.0.nupkg.sha512",
     "C:\\Users\\mrale\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\7.4.0\\microsoft.identitymodel.jsonwebtokens.7.4.0.nupkg.sha512",
     "C:\\Users\\mrale\\.nuget\\packages\\microsoft.identitymodel.logging\\7.4.0\\microsoft.identitymodel.logging.7.4.0.nupkg.sha512",
