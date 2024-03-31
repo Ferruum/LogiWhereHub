@@ -19,10 +19,9 @@ jobs:
         with:
           dotnet-version: '6.0.x'
 
-      - name: Install dotnet tool
+      - name: Install dependencies
         run: |
-          dotnet new tool-manifest
-          dotnet tool install Microsoft.CodeAnalysis.NetAnalyzers --version 8.0.0
+          dotnet add package Microsoft.CodeAnalysis.NetAnalyzers --version 8.0.0
 
       - name: Check style project
         run: |
