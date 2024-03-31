@@ -1,0 +1,28 @@
+name: Code Analysis Pipeline
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  checkstyle_project:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up .NET Core
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '6.0.x'
+
+      - name: Install dependencies
+        run: |
+          dotnet add package Microsoft.CodeAnalysis.NetAnalyzers --version 8.0.0
+
+      - name: Check style project
+        run: |
+          dotnet analyze --severity Microsoft.CodeAnalysis.CSharp.DiagnosticSeverity.Error
