@@ -19,10 +19,6 @@ jobs:
         with:
           dotnet-version: '6.0.x'
 
-      - name: Install dependencies
-        run: |
-          dotnet add package Microsoft.CodeAnalysis.NetAnalyzers --version 8.0.0
-
       - name: Check style project
         run: |
           dotnet analyze --severity Microsoft.CodeAnalysis.CSharp.DiagnosticSeverity.Error
